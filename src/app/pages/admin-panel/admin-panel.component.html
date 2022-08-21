@@ -1,0 +1,64 @@
+<div class="flex flex-col flex-auto min-w-0">
+    <div class="usermainbox mt-5 mb-5 sm:mt-4">
+        <section *ngIf="!isLoading">
+            <div class="matchDetails">
+                <div class="matchListDetails">
+                   
+                    <div class="matchpoint">
+                        <ul>
+                            <li>First Name</li>
+                        </ul>
+                        <ul>
+                            <li>Last Name</li>
+                        </ul>
+                        <ul >
+                            <li class="ul-email" >Email</li>
+                        </ul>
+                        <ul>
+                            <li style="text-align: center !important;">Action</li>
+                        </ul>
+                       
+                    </div>
+                </div>
+
+                <div class="matchListDetails" *ngFor="let users of users">
+                    <!-- <div class="matchClub pl-3" style="color: grey; border: 1px solid red;">
+                        First Name
+                    </div> -->
+                    <div class="matchpoint txtblack" >
+                        <ul>
+                            <li>{{users.first_name }}</li>
+                        </ul>
+                        <ul>
+                            <li>{{users.last_name}}</li>
+                        </ul>
+                        <ul >
+                            <li class="ul-email" >{{users.email}}</li>
+                        </ul>
+                        <ul style="display: flex;">
+                            <li style="text-align: center !important;">
+                                <mat-icon style="cursor: pointer;" svgIcon="heroicons_outline:pencil-alt"  (click)="editdialoge(users)" ></mat-icon>
+                                <mat-icon style="cursor: pointer;" svgIcon="heroicons_outline:trash" (click)="deleteuser(users.id)"></mat-icon>
+                                <!-- <mat-icon [svgIcon]="'heroicons_outline:trash'"></mat-icon> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+             
+            </div>
+            
+        </section>
+           <div *ngIf="isLoading">
+                    <mat-spinner [diameter]="50" style="margin: 20vh auto;"></mat-spinner>
+                </div>
+        <mat-paginator #paginator  [length]="totalCount"
+              [pageSize]="pgSize"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page"  (page)="getServerData($event)"> 
+</mat-paginator>
+    </div>
+
+    
+    
+</div>
+

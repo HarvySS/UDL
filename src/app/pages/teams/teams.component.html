@@ -1,0 +1,823 @@
+<div class="flex flex-col flex-auto min-w-0 scrollSmooth">
+    <div class="usermainbox mt-5 mb-5">
+        <section>
+
+            <!-- Aston -->
+
+            <fuse-card class="mb-5">
+                <div id='Aston' class="ml-5 marginRight ">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-0 mt-5  justify-end  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>Aston University</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Aston_Slide"
+                                  [imagePopup]="false"
+                                  [infinite]="true"
+                                  [showArrow]="false"
+                                  [animationSpeed] ="2"
+                                  [autoSlide]="1"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+                              
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>Aston University</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Aston }">
+                                    Aston University is a public research university which is based in the city centre
+                                    and heart of
+                                    Birmingham. Aston University was first formed as a Birmingham Municipal Technical
+                                    School in 1895.
+                                    Next it evolved into UK’s first College of Advanced Technology in 1956. Then it
+                                    received its royal
+                                    charter from Queen Elizabeth II on 22nd April 1966 to gain university status. The
+                                    University primarily
+                                    focuses on business, engineering and health. Total students’ capacity of 15,500
+                                    students shows it is a
+                                    university that is expanding. Now this is a team that wants to compete at a high
+                                    level in Football
+                                    where they are progressing and staying in the top division in consecutive seasons.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Aston=!Aston;">
+                                    {{ Aston ? 'Read More' : 'Read Less' }}
+                                </button>
+                            </div>
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>Honour:</b></h1>
+                                <ul>
+                                    <li>1 x 2nd Division league title </li>
+                                </ul>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: University of Birmingham
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Leicester -->
+
+            <fuse-card class="mb-5">
+                <div id='Leicester' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>University of Leicester</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Leicester_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [showArrow]="false"
+                                  [animationSpeed] ="2"
+                                  [autoSlide]="1"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+                            <!-- <div>
+                                <img src="../../../assets/icons/Leicester2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/UOL2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>University of Leicester</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Leicester }">
+                                    The University of Leicester is a public research university based in Leicester. The
+                                    main campus is
+                                    south of the city centre adjacent to Victoria Park. It was first known as
+                                    Leicestershire and Rutland
+                                    University College in 1921. Then in 1957 it gained university status by royal
+                                    charter. University of
+                                    Leicester received media attention for the invention of genetic fingerprinting and
+                                    for making a
+                                    contribution for the discovery of the remains of King Richard III. Total student's
+                                    capacity of 16,200
+                                    students shows it is a university that is expanding. University of Leicester is a
+                                    team that surprises
+                                    everyone and with them playing a unique style of football they have caught loads of
+                                    people’s
+                                    attention as the dark horses to win the 1st division league title.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Leicester=!Leicester;">
+                                    {{ Leicester ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>1 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: Loughborough University
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Loughborough -->
+
+            <fuse-card class="mb-5">
+                <div id='Loughborough' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>Loughborough University</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Loughborough_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [autoSlide]="1"
+                                  [animationSpeed] ="2"
+                                  [showArrow]="false"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/Loughborough2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/Loughborough2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>Loughborough University</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Loughborough }">
+                                    Loughborough University is a public research university in the market town of
+                                    Loughborough,
+                                    Leicestershire. It first initiated as Loughborough Technical institute began with a
+                                    focus on skills
+                                    which directly apply to the wider world. It then became a university at 1966 when
+                                    incorporated by
+                                    the royal charter. 18,439 students show a university that has open recently has
+                                    evolved massively.
+                                    Loughborough University in sports and especially football is the most decorated
+                                    university in
+                                    honours and awards. If any team is going to win the division, then they need to
+                                    surpass
+                                    Loughborough.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Loughborough=!Loughborough;">
+                                    {{ Loughborough ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>11 x 1st Division league title</li>
+                                        <li>7 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: University of Leicester
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Brunel -->
+
+            <fuse-card class="mb-5">
+                <div id='Brunel' class="ml-5 marginRight ">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>Brunel University</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Brunel_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [autoSlide]="1"
+                                  [animationSpeed] ="2"
+                                  [showArrow]="false"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/Brunel2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/Brunel2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>Brunel University</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Brunel }">
+                                    Brunel University is a public research university that is based in the Uxbridge area
+                                    of London. It
+                                    initiated in 1798 known as Borough Road College, which was then renamed Acton
+                                    Technical College
+                                    in 1928. The name Brunel was founded in 1966 which was after the Victorian engineer
+                                    Isambard
+                                    Kingdom Brunel. Brunel College of Advanced Technology was awarded a royal charter
+                                    and became
+                                    Brunel University in June 1966. Total capacity of 15,520 students shows that it is
+                                    expanding. Brunel
+                                    University is a university that competes on all sports at a very high level where
+                                    they have always
+                                    been near the top of the league in the highest division.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Brunel=!Brunel;">
+                                    {{ Brunel ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>2 x 1st Division league title</li>
+                                        <li>2 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: University College London
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- UCL -->
+
+            <fuse-card class="mb-5">
+                <div id='UCL' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>University College London</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="UCL_Slide"
+                                  [imagePopup]="false"
+                                  [showArrow]="false"
+                                  [infinite]="true"
+                                  [animationSpeed] ="2"
+                                  [autoSlide]="1"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/UCL2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/UCL2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>University College London</b></h1>
+                                <p [ngClass]="{'limitTextHeight': UCL }">
+                                    University College London, which is also known as UCL, is a major public research
+                                    university located
+                                    in London, United Kingdom. It was first known as London University which was
+                                    established in 1826
+                                    where it was inspired by the radical ideas of Jeremy Bentham and that ked it to be
+                                    the first university
+                                    institution to be established in London. In 1907 it was known as University of
+                                    London, University
+                                    College and then 1977 is when University College London was established. University
+                                    College London
+                                    is part of the Russell group association where it has a total capacity of 42,000
+                                    students which shows
+                                    it is a massive university worldwide. University College London is a university that
+                                    has maintained in
+                                    being in the top flight for the last 13 seasons. They are getting closer and closer
+                                    to achieve their goal
+                                    in winning the 1st division league title.
+                                </p>
+                                <button type="button" class="readbtn" (click)="UCL=!UCL;">
+                                    {{ UCL ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>1 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: Brunel University
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Nottingham -->
+
+            <fuse-card class="mb-5">
+                <div id='Nottingham' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>University of Nottingham</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Nottingham_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [showArrow]="false"
+                                  [autoSlide]="1"
+                                  [animationSpeed] ="2"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/Nottingham2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/Nottingham2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>University of Nottingham</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Nottingham }">
+                                    The University of Nottingham is a public research university in Nottingham. It first
+                                    initiated in 1798
+                                    known as teacher training college. It was founded as University College Nottingham
+                                    in
+                                    1881, and was
+                                    granted a royal charter in 1948. Outside the UK, the university has campuses in
+                                    Semenyih, Malaysia,
+                                    and Ningbo, China. University of Nottingham is part of the Russell group association
+                                    where it has a
+                                    total capacity of 44,000 students which shows it is a massive university worldwide.
+                                    It
+                                    is becoming a
+                                    prestigious football team in the past years and they recently want to compete with
+                                    the
+                                    very best in
+                                    the division.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Nottingham=!Nottingham;">
+                                    {{ Nottingham ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>1 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: University of Manchester
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Newcastle -->
+
+            <fuse-card class="mb-5">
+                <div id='Newcastle' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>Newcastle University</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Newcastle_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [autoSlide]="1"
+                                  [animationSpeed] ="2"
+                                  [showArrow]="false"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/Newcastle2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/Newcastle2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>Newcastle University</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Newcastle }">
+                                    Newcastle University is a UK public research university based in Newcastle Upon
+                                    Tyne, North East
+                                    England. It has overseas campuses in Malaysia and Singapore. The roots of Newcastle
+                                    University
+                                    were found and established in 1834 known as the School of Medicine and Surgery.
+                                    Newcastle
+                                    University in 1963 was established where it became independent from the University
+                                    of Durham.
+                                    Newcastle University is a member of the Russell group where the total capacity of
+                                    28,000 students
+                                    shows it is one of the biggest Universities. Newcastle University is a team which is
+                                    excelling and
+                                    wanting to compete even though they are one of the newest teams in the top division.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Newcastle=!Newcastle;">
+                                    {{ Newcastle ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>1 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: Durham University
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Manchester -->
+
+            <fuse-card class="mb-5">
+                <div id='Manchester' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>University of Manchester</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Manchester_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [showArrow]="false"
+                                  [autoSlide]="1"
+                                  [animationSpeed] ="2"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/Manchester2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/Manchester2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>University of Manchester</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Manchester }">
+                                    The University of Manchester is a public research university based in Manchester. 25
+                                    Nobel Prize
+                                    winners have either studied or worked there. University of Manchester was first
+                                    known as
+                                    Manchester Mechanics Institute at 1824. The current University of Manchester was
+                                    formed at 2004
+                                    following the merger of Victoria University of Manchester 1904 and University of
+                                    Manchester
+                                    Institute of Science and Technology 1956. The university is a member of the Russell
+                                    group where the
+                                    total capacity of 40,485 students makes it one of the biggest universities in the
+                                    UK. Manchester is
+                                    known for its sports its recent times getting a promotion and winning the second
+                                    division.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Manchester=!Manchester;">
+                                    {{ Manchester ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>1 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: University of Nottingham
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Durham -->
+
+            <fuse-card class="mb-5">
+                <div id='Durham' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>Durham University</h1>
+                            </div>
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Durham_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [showArrow]="false"
+                                  [autoSlide]="1"
+                                  [animationSpeed] ="2"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/Durham2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/Durham2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>Durham University</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Durham }">
+                                    Durham University is a collegiate public research university in Durham which was
+                                    founded by an Act
+                                    of Parliament in 1832. It was then incorporated by the royal charter in 1837. It is
+                                    the third oldest
+                                    university in England where it has been open for more than 600 years after Cambridge
+                                    and Oxford.
+                                    The university is a member of the Russell group where it has around 19,520 students
+                                    to show that it
+                                    is one of the largest Universities in the UK. Durham University are amazing in
+                                    sports and football
+                                    where they have recently finished in the top 4 of the first division.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Durham=!Durham;">
+                                    {{ Durham ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>1 x 1st Division league title</li>
+                                        <li>1 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: Newcastle University
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+            <!-- Birmingham -->
+
+            <fuse-card class="mb-5">
+                <div id='Birmingham' class="ml-5 marginRight">
+                    <div
+                        class="flex flex-col md:flex-row items-start mb-10 mt-5 justify-between  w-full pt-6 pb-6 filter-testimonial">
+                        <div class="h-50 w-full md:mr-8 mb-8 md:mb-0 teamimg">
+                            <div class="top-left">
+                                <h1>University of Birmingham</h1>
+                            </div>
+
+
+                            <div class="carousel">
+                                <ng-image-slider #nav
+                                  [images]="Birmingham_Slide"
+                                  [infinite]="true"
+                                  [imagePopup]="false"
+                                  [showArrow]="false"
+                                  [autoSlide]="1"
+                                  [animationSpeed] ="2"
+                                  [imageSize]="{width: '100%', height: 200}"
+                                  slideImage="1"></ng-image-slider>
+                              </div>
+
+                            <!-- <div>
+                                <img src="../../../assets/icons/UOB2.png" class="logo_png" alt="">
+                                <img class="h-50 w-500 md:mr-8 mb-8 md:mb-0 object-cover imght"
+                                    src="../../../assets/images/teams/UOB2.jpg" alt="Card cover image"
+                                    style="border-radius: 25px;">
+                            </div> -->
+
+
+                            <!-- <div class="iconRight">
+                                <img class="object-cover icnimg" src="../../../assets/icons/trophy-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/person-solid.svg"
+                                    alt="Card cover image">
+                                <img class="object-cover icnimg" src="../../../assets/icons/question-solid.svg"
+                                    alt="Card cover image">
+                            </div> -->
+                        </div>
+
+                        <div class="flex flex-col w-500 flex-auto justify-end txtwidth">
+
+
+                            <div class="text-lg italic leading-relaxed">
+                                <h1><b>University of Birmingham</b></h1>
+                                <p [ngClass]="{'limitTextHeight': Birmingham }">
+                                    The University of Birmingham also known as Birmingham University is a public
+                                    research university
+                                    which is based in Edgbaston, Birmingham. It was first established in 1825 known as
+                                    Birmingham
+                                    School, of Medicine and Surgery. Then changed names in 1843 as Queen’s College and
+                                    1898 as
+                                    Mason University College. In 1900 University of Birmingham, it gained university
+                                    status by receiving
+                                    its royal charter. University of Birmingham is part of the Russell group association
+                                    where it has a
+                                    total capacity of 32,000 students which shows it is a university known worldwide.
+                                    University of
+                                    Birmingham are the recent winners in the 2nd Division. However, the way they played
+                                    shows that
+                                    they play with tremendous hunger and desire. They will be a team that everyone will
+                                    be weary off.
+                                </p>
+                                <button type="button" class="readbtn" (click)="Birmingham=!Birmingham;">
+                                    {{ Birmingham ? 'Read More' : 'Read Less' }}
+                                </button>
+                                <div class="text-lg italic leading-relaxed">
+                                    <h1><b>Honour:</b></h1>
+                                    <ul>
+                                        <li>1 x 2nd Division league title</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-md font-medium text-primary mt-4">
+                                &#8212; Rival: Aston University
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </fuse-card>
+
+        </section>
+    </div>
+</div>

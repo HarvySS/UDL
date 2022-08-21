@@ -1,0 +1,31 @@
+.contactbanner {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 250px;
+}
+
+.contactDt {
+    //    border: 2px solid yellow;
+    width: 30%;
+    height: 200px;
+    padding: 10px;
+}
+
+ul{
+    list-style:disc;
+    padding: 0px 0px 0px 1.35rem;
+    
+}
+
+.list{
+    padding: 5px 0px 5px 0px;
+    font-size: 0.96rem;
+}
+
+.instruction-heading{
+    font-weight: 700; 
+    font-size:2rem; 
+    padding: 15px 0px 15px 0px;
+}

@@ -1,0 +1,68 @@
+<div class="flex flex-col flex-auto min-w-0">
+<div class="usermainbox mt-5 mb-5 sm:mt-4">
+        <section>
+            <div class="matchDate">
+                <p class="season">Season</p>
+                <div
+                class="relative flex self-start pt-2 pb-1 pl-5 pr-4 cursor-pointer"
+                matRipple
+                [matMenuTriggerFor]="projectsMenu">
+                <div class="flex items-center">
+                    <div class="overflow-hidden">
+                        <div class="font-medium leading-6 truncate">{{selectedSeason}}</div>
+                    </div>
+                    <div class="flex items-center justify-center pl-2">
+                        <mat-icon
+                            class="icon-size-5"
+                            [svgIcon]="'heroicons_solid:chevron-down'"></mat-icon>
+                    </div>
+                    <mat-menu #projectsMenu="matMenu" [xPosition]="'after'">
+                        <button *ngFor="let season of seasons; let i = index" mat-menu-item
+                            (click)="selectedSeason=season; seasonChanged();">{{season}}
+                        </button>
+                    </mat-menu>
+                </div>
+            </div>
+            </div>
+            <!-- <div *ngIf="!teams"> -->
+            <div *ngIf="isLoading">
+                <mat-spinner [diameter]="50" style="margin: 20vh auto;"></mat-spinner>
+            </div>
+
+            <div class="matchDetails" *ngIf="teams && teams.length>0 && !isLoading">
+                <div class="matchListDetails" >
+                    <div class="matchClub pl-3" style="color: grey;">
+                        Team
+                    </div>
+                    <div class="matchpoint">
+                        <ul>
+                            <li>MP</li>
+                            <li>W</li>
+                            <li>D</li>
+                            <li>L</li>
+                            <li>Pts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="matchListDetails bordleftblue" *ngFor="let team of teams; let i = index">
+                    <div class="matchClub pl-3 " (click)="redirectToTeams(team.team_name)" style="cursor: pointer;">
+                        <div class="clubcolumn">
+                            <div class="clubid">{{i+1}}</div>
+                            <img class="w-6 h-6 ml-2 mr-2 rounded-full" src="{{serverUrl+team.logo_path}}">
+                            {{team.team_name}}
+                        </div>
+                    </div>
+                    <div class="matchpoint txtblack">
+                        <ul>
+                            <li>{{team.mp}}</li>
+                            <li>{{team.w}}</li>
+                            <li>{{team.d}}</li>
+                            <li>{{team.l}}</li>
+                            <li>{{team.pts}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

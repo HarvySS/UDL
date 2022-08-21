@@ -1,0 +1,152 @@
+.usermainbox {
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    width: 63vw;
+    // width: 61rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.matchDate {
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    padding: 8px;
+    color: black;
+    background-color: #ebebeb;
+}
+
+.matchDetails {
+    width: 100%;
+}
+
+.matchList {
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    height: 100px;
+    width: 50%;
+    padding: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+.font-gray {
+    color: grey;
+}
+
+.matchListDetails {
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    height: 37px;
+    width: 100%;
+    
+}
+
+.matchpoint {
+    height: 37px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.matchClub {
+    height: 37px;
+    width: 19.5%;
+    display: flex;
+    border: 1px solid red !important;
+    align-items: center;
+    position: absolute;
+}
+
+.matchpoint ul {
+    display: flex;
+    justify-content: right;
+}
+
+.matchpoint ul li {
+    list-style: none;
+    // height: 37px;
+    color: grey;
+    // width: 2.5rem;
+    width: 15.5vw !important;
+    // border: 1px solid;
+    text-align: left;
+    font-size: 14px;
+}
+
+.txtblack ul li {
+    color: black !important;
+}
+
+.clubcolumn {
+    display: flex;
+    position: absolute;
+    left: 16px;
+    width: 63vw;
+    color: black !important;
+}
+
+.clubcolumn p {
+    color: grey !important;
+}
+
+.clubid {
+    width: 24px !important;
+}
+
+.bordleftblue {
+    border-left: 3px solid dodgerblue;
+}
+
+.bordleftgreen {
+    border-left: 3px solid green;
+}
+
+.bordleftorange {
+    border-left: 3px solid orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.red {
+    background-color: red;
+}
+@media only screen and (max-width: 1200px) {
+.matchpoint ul .ul-email{
+    word-break: break-all;
+}
+}
+@media only screen and (max-width: 880px) {
+    .usermainbox {
+        width: 100vw;
+        // position: absolute;
+        margin-top: 7px !important;
+        // border: 1px solid;
+    }
+
+    .matchpoint {
+        width: 100%;
+        // border: 1px solid red;
+    }
+    .matchpoint ul li{
+        // border: 1px solid purple;
+        width: 24vw !important;
+        font-size: 12px !important;
+    }
+    .matchpoint ul .ul-email{
+        // border: 1px solid green !important;
+        width: 28vw !important;
+        word-break: break-all;
+        line-height: 11px;
+    }
+}

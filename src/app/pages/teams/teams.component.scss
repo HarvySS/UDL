@@ -1,0 +1,126 @@
+img.imght{
+width: 25vw !important;
+border-radius: 25px;
+}
+.logo_png{
+    right: 85px;
+    height: 5vw; 
+    width: 5vw;
+    position: absolute;
+}
+
+.carousel{
+    width: 30vw; 
+    height: 500px;
+    padding-top: 0.5rem
+}
+.readbtn{
+    font-size: 13px;
+    color: dodgerblue;
+}
+
+.show-less {
+    height: 3rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 950px ) {
+    .carousel {
+        width: 100vw; 
+        height: 200px;
+        padding-top: 0.5rem
+    }
+  }
+.usermainbox {
+    // border: 1px solid #ebebeb;
+    // background-color: #ffffff;
+    // width: 95rem;
+    width: 90vw;
+    margin: 0 auto;
+    position: relative;
+}
+.iconRight{
+    height: inherit;
+    display: grid;
+    width: 37px;
+    position: absolute;
+    right: -5px !important;
+}
+.iconRight .icnimg{
+    width: 28px !important;
+    padding-left: 5% !important;
+    margin-left: 9% !important;
+}
+.teamimg{
+    display: flex;
+    position: relative;
+    width: 90% !important;
+}
+
+
+.imght{
+    height: 210px !important;
+}
+.top-left {
+    position: absolute;
+    top: -25px;
+    font-weight: 600;
+    // left: 14px;
+    font-size: 18px;
+  }
+html {
+    scroll-behavior: smooth !important;
+}
+
+.scrollSmooth {
+    scroll-behavior: smooth !important;
+}
+.txtwidth{
+    width: 150% !important;
+    padding-right: 5%;
+    // border: 1px solid red;
+}
+.limitTextHeight {
+    height: 50px;
+    overflow: hidden;
+    font-size: 15px;
+}
+p{
+    font-size: 15px;
+}
+
+ul li{
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 950px) {
+  .leading-relaxed{
+    margin-top: 4%;
+    width: 96vw;
+    margin: 6px;
+  }
+  .marginRight{
+      margin: 0 auto !important;
+  }
+  .teamimg img{
+    width: 100vw !important;
+}
+ 
+//   .top-left{
+//     position: absolute;
+//     left: 50%;
+//     // border: 1px solid red;
+//     width: 412px;
+//     font-size: 15px;
+//     text-align: center;
+//     transform: translate(-50%, -50%);
+//   }
+  .usermainbox {
+    // border: 1px solid #ebebeb;
+    // background-color: #ffffff;
+    // width: 95rem;
+    width: 100vw;
+    // margin: 0 auto;
+    // position: relative;
+}
+}

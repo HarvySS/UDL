@@ -1,0 +1,46 @@
+<div class="flex flex-col flex-auto min-w-0">
+    <div class="usermainbox mt-5 mb-5 sm:mt-4">
+        <section>
+            <!-- <div class="matchDate">
+                <h2>MatchDay 20 2020</h2>
+            </div> -->
+            <div class="matchDetails">
+                <div class="matchListDetails">
+                    <div class="matchClub pl-3" style="color: grey;">
+                        User
+                    </div>
+                    <div class="matchpoint">
+                        <ul>
+                            <li>Points</li>
+                        </ul>
+                        <ul>
+                            <li>Correct Predictions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div *ngIf="!users">
+                    <mat-spinner [diameter]="50" style="margin: 20vh auto;"></mat-spinner>
+                </div>
+                <div class="matchListDetails bordleftblue" *ngFor="let user of users; let i = index">
+                    <div class="matchClub pl-3 ">
+                        <div class="clubcolumn">
+                            <div class="clubid">
+                                {{i+1}}
+                            </div>
+                            <img class="w-6 h-6 ml-2 mr-2 rounded-full" src="../../../assets/icons/player1.png">
+                            {{user.userName}}
+                        </div>
+                    </div>
+                    <div class="matchpoint txtblack">
+                        <ul>
+                            <li>{{user.pts}}</li>
+                        </ul>
+                        <ul>
+                            <li>{{user.correct_predictions}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

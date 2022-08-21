@@ -1,0 +1,47 @@
+<div class="contactfm">
+    <div class="contacthd pb-2">
+        <h5 class="heading-component-title">Teams Score</h5>
+    </div>
+    <div class="flex flex-col pt-4 mt-5 shadow overflow-hidden">
+        <form #f="ngForm" (ngSubmit)="savePrediction(f)">
+        <div class="flex flex-row gt-xs:flex-col">
+            <div style="width: 50%;">
+                <label class="pred-label">
+                    <img class="w-7 h-7 rounded-full" src="{{serverUrl+'/'+data.team1.logo_path}}">
+                    {{data.team1.team_name}}
+                </label>
+                <mat-form-field class="fmlabel pl-4 mr-3 fuse-mat-textarea flex-auto w-full"
+                    [ngClass]="formFieldHelpers">
+
+                    <input matInput required type="number" #user_team1_score="ngModel" name="user_team1_score" id="user_team1_score" min="0" max="5" [(ngModel)]="prediction.user_team1_score">
+                </mat-form-field>
+            </div>
+            <div style="width: 50%;" class="mr-4">
+                <label class="pred-label">
+                    <img class="w-7 h-7 rounded-full" src="{{serverUrl+'/'+data.team2.logo_path}}">
+                    {{data.team2.team_name}}
+                </label>
+                <mat-form-field class="fmlabel pl-4 mr-3 fuse-mat-textarea flex-auto w-full"
+                    [ngClass]="formFieldHelpers">
+
+                    <input matInput required type="number" #user_team2_score="ngModel" name="user_team2_score" id="user_team2_score" min="0" max="5" [(ngModel)]="prediction.user_team2_score">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="flex items-center justify-end border-t -mx-8 mt-8 px-8 py-5 bg-gray-50 dark:bg-gray-700"
+            style="margin-left: -8% !important;">
+            <button type="button" (click)="closedialoge()" mat-stroked-button>
+                Cancel
+            </button>
+            <button type="submit" class="px-6 ml-3 mr-4" mat-flat-button [color]="'primary'" [disabled]="loaderCheck">
+
+                <mat-progress-spinner *ngIf="loaderCheck" [diameter]="24" [mode]="'indeterminate'">
+                </mat-progress-spinner>
+                <span>
+                    Save
+                </span>
+            </button>
+        </div>
+    </form>
+    </div>
+</div>

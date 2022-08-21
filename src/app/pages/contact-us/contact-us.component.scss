@@ -1,0 +1,153 @@
+.contactFormDiv {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+.contactbanner {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 250px;
+}
+
+.ovflow-x {
+    overflow-x: hidden !important;
+}
+
+.contactfm {
+    //    border: 2px solid green;
+    width: 70%;
+    height: 200px;
+    margin-right: 2%;
+    padding: 10px;
+}
+
+.email{
+    font-size: 0.95rem;
+}
+.email-para{    
+    
+    font-size: 0.95rem;
+    margin-left: -0.7rem;
+    }
+
+.contact-box{
+    display:flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: -25%; 
+}
+
+.contactDt {
+    //    border: 2px solid yellow;
+    width: 30%;
+    height: 200px;
+    padding: 10px;
+    
+}
+.card{
+    width: 60vw;
+}
+.contact-para{
+    
+    font-size: 0.95rem;
+}
+.contact-heading{
+    font-weight: 700; 
+    font-size:2rem; 
+    padding: 15px 0px 15px 0px;
+}
+
+.contacthd {
+    border-bottom: 1px solid #d7d7d7
+}
+
+.heading-component-title::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    left: 0;
+    border-left: 4px solid #35ad79;
+    pointer-events: auto;
+}
+
+.heading-component-title {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    line-height: 26px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #151515;
+    text-transform: uppercase;
+}
+
+.savebtn {
+    border-radius: 9px !important;
+    padding: 22.5px !important;
+    width: 47%;
+}
+
+.textAreaHg {
+    //    border: 2px solid red;
+    height: 300px;
+}
+
+@media only screen and (min-width:381px) and (max-width: 650px) {
+    .contactFormDiv {
+        display: inline;
+        width: 100vw;
+    }
+
+    .formWd {
+        width: 93vw;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+    .card{
+        margin-left: -50%; 
+        width: 90vw
+
+    }
+
+    .contact-para{
+    
+        font-size: 0.85rem;
+    }
+
+    .email{
+        font-size: 0.85rem;
+    }
+    .email-para{
+        font-size: 0.85rem;
+        margin-left: -0.4rem;
+        }
+    
+    
+}
+
+@media only screen and (max-width: 380px) {
+    .card{
+        
+        margin-left: -62%; 
+        width: 95vw
+    }
+
+    .contact-para{
+        font-size: 0.75rem;
+    }
+    .email{
+        font-size: 0.75rem;
+    }
+    .email-para{
+        font-size: 0.75rem;
+        margin-left: -0.7rem;
+        }
+}

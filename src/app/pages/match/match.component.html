@@ -1,0 +1,87 @@
+<div *ngIf="!matchList">
+    <mat-spinner [diameter]="50" style="margin: 20vh auto;"></mat-spinner>
+</div>
+<div class="mainbox">
+    <section *ngFor="let mtList of matchList">
+        <div class="matchDate">
+            <h2>{{mtList.date}}</h2>
+            <!-- <p class="season">Match date</p> -->
+            <!-- <div
+            class="relative flex self-start pt-2 pb-1 pl-5 pr-4 cursor-pointer"
+            matRipple
+            [matMenuTriggerFor]="projectsMenu">
+            <div class="flex items-center">
+                <div class="overflow-hidden">
+                    <div class="font-medium leading-6 truncate">{{selectedProject}}</div>
+                </div>
+                <div class="flex items-center justify-center pl-2">
+                    <mat-icon
+                        class="icon-size-5"
+                        [svgIcon]="'heroicons_solid:chevron-down'"></mat-icon>
+                </div>
+            </div>
+            <mat-menu
+                #projectsMenu="matMenu"
+                [xPosition]="'after'">
+                <button
+                    mat-menu-item
+                    (click)="selectedProject='2022-21'">2022-21
+                </button>
+                <button
+                    mat-menu-item
+                    (click)="selectedProject='2022-28'">2022-28
+                </button>
+                <button
+                    mat-menu-item
+                    (click)="selectedProject='2022-2'">2022-2
+                </button>
+                <button
+                    mat-menu-item
+                    (click)="selectedProject='2022-15'">2022-15
+                </button>
+            </mat-menu>
+        </div> -->
+        </div>
+        <div class="matchDetails" >
+            <div class="matchList" *ngFor="let match of mtList.games; let i = index" (click)="onOpenDialogClick(match)" style="cursor: pointer;">
+                <div class="teams" >
+                    <div class="teamsec">
+                        <div class="flex items-center mt-2 pl-5" (click)="redirectToTeams(match.team1.team_name)">
+                            <img class="w-7 h-7 rounded-full" style="cursor: pointer;" src="{{serverUrl+'/'+match.team1.logo_path}}">
+                            <div class="flex flex-col ml-3">
+                                <span  style="cursor: pointer;" class="font-medium leading-none font-gray">{{match.team1.team_name}}
+                                    <!-- <span class="votetm1">votes 23+</span> -->
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="score ">
+                            <p>{{match.team1_goals}}</p>
+                            <mat-icon class="arrowRight" *ngIf="match.won_id == match.team1_id">arrow_left</mat-icon>
+                        </div>
+                    </div>
+                    <div  class="teamDate mt-2 pt-3">
+                       <span *ngIf=" match.won_id != null || match.is_draw == false " >FT</span>
+                        <p class="font-gray">{{match.match_date | date:'EEEE, MMM d'}}</p>
+                        <p *ngIf="!match.won_id && !match.is_draw" class="font-gray">{{match.match_date | date:'h:mm a'}}</p>
+                    </div>
+                </div>
+                <div class="teamsec" style="margin-top: -2px;">
+                    <div class="flex items-center mt-2 pl-5" (click)="redirectToTeams(match.team2.team_name)">
+                        <img class="w-7 h-7 rounded-full" src="{{serverUrl+'/'+match.team2.logo_path}}">
+                        <div class="flex flex-col ml-3">
+                            <span class="font-medium leading-none">{{match.team2.team_name}}
+                                <!-- <span class="votetm2">votes 2+</span> -->
+                            </span>
+                        </div>
+                    </div>
+                    <div class="score">
+                        <p>{{match.team2_goals}}</p>
+                        <mat-icon class="arrowRight" *ngIf="match.won_id == match.team2_id">arrow_left</mat-icon>
+                    </div>
+                </div>
+                <div class="teamDate"></div>
+            </div>
+        </div>
+    </section>
+</div>
